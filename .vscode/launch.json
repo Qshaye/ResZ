@@ -1,0 +1,25 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python",
+      "type": "python",
+      "request": "launch",
+      "python": "/opt/anaconda3/envs/py/bin/python",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "stopOnEntry": true,
+      "justMyCode": true,
+      "args": [
+        "--config=resz", // 选择 config->algs 
+        "--env-config=sc2", //选择 config->envs 为 sc2.yaml
+        "with",
+        "env_args.map_name=3m",
+        "t_max=20000"
+      ]
+    }
+  ]
+}

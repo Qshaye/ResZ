@@ -1,0 +1,53 @@
+# learner: dresq_nocentral_learner
+# --- QMIX specific parameters ---  换了learner 单独学了rest_q_i 还在里面用了td_lambda
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 1000000
+
+runner: "episode"
+
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "dresq_nocentral_learner"
+mac: "resz_mac"
+double_q: True  # 为什么false
+mixer: "ddn"
+mixing_embed_dim: 32
+hypernet_layers: 2
+hypernet_embed: 64
+negative_abs: True
+rest_mixer: "qmix"
+
+# IQN specific parameters
+agent: "iqn_rnn"
+optimizer: "RMSProp" 
+quantile_embed_dim: 64 # n in paper
+n_quantiles: 8 # N in paper
+n_target_quantiles: 8 # N' in paper
+n_approx_quantiles: 32 # \hat{N} in paper, for approximating Q
+
+# 
+t_max: 1050000
+central_mixing_embed_dim: 128
+
+central_action_embed: 1
+central_mac: "base_central_mac" #####
+central_agent: "anyway"  # "central_rnn_big"，则会obs换成state
+
+central_mixer: "ff"
+
+td_lambda: 0.6
+lr: 0.001  # 0.0005 in default
+
+qmix_loss: 1
+noopt_loss: 1
+
+name: "ResZ_predator_dq_nocentral"  # 决定了数据存储的文件目录名
