@@ -14,10 +14,9 @@
       "stopOnEntry": true,
       "justMyCode": true,
       "args": [
-        "--config=resz", // 选择 config->algs 
-        "--env-config=sc2", //选择 config->envs 为 sc2.yaml
+        "--config=ResZ_predator_2d", // 选择 config->algs 
+        "--env-config=stag_hunt", //选择 config->envs 为 sc2.yaml
         "with",
-        "env_args.map_name=3m",
         "t_max=20000"
       ]
     }
