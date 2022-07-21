@@ -2,6 +2,7 @@
   // 使用 IntelliSense 了解相关属性。 
   // 悬停以查看现有属性的描述。
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  // debug捕食者游戏
   "version": "0.2.0",
   "configurations": [
     {
@@ -14,8 +15,8 @@
       "stopOnEntry": true,
       "justMyCode": true,
       "args": [
-        "--config=ResZ_predator_2d", // 选择 config->algs 
-        "--env-config=stag_hunt", //选择 config->envs 为 sc2.yaml
+        "--config=qmix", // 选择 config->algs 
+        "--env-config=stag_hunt_p2_small", //选择 config->envs 为 sc2.yaml
         "with",
         "t_max=20000"
       ]
