@@ -10,13 +10,14 @@
       "type": "python",
       "request": "launch",
       "python": "/opt/anaconda3/envs/py/bin/python",
+      "pythonPath": "/opt/anaconda3/envs/py/bin/python",
       "program": "${file}",
       "console": "integratedTerminal",
       "stopOnEntry": true,
       "justMyCode": true,
       "args": [
-        "--config=qmix", // 选择 config->algs 
-        "--env-config=stag_hunt_p2_small", //选择 config->envs 为 sc2.yaml
+        "--config=resz_stag", // 选择 config->algs 
+        "--env-config=stag_hunt", //选择 config->envs 为 sc2.yaml
         "with",
         "t_max=20000"
       ]

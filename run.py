@@ -106,7 +106,7 @@ def run_sequential(args, logger):
     args.state_shape = env_info["state_shape"]
     
     if getattr(args, 'agent_own_state_size', False):
-        args.agent_own_state_size = get_agent_own_state_size(args.env_args)
+        args.agent_own_state_size = get_agent_own_state_size(args.env_args) # attention计算权重需要
         
     # Default/Base scheme
     # scheme 存了当前环境的整体基本信息

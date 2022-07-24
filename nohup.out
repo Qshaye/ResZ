@@ -1,0 +1,178 @@
+[DEBUG 02:38:56] git.cmd Popen(['git', 'version'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'version'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 02:38:56] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/Qshaye/pymarl/src, universal_newlines=False, shell=None, istream=<valid stream>)
+main.py:70: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  if isinstance(v, collections.Mapping):
+[INFO 02:38:56] root Saving to FileStorageObserver in /home/Qshaye/pymarl/debug_results/sacred/stag_hunt/resz_stag
+[DEBUG 02:39:06] pymarl Using capture mode "fd"
+pygame 2.1.2 (SDL 2.0.16, Python 3.8.12)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[INFO 02:39:06] pymarl Running command 'my_main'
+[INFO 02:39:06] pymarl Started run with ID "4"
+[DEBUG 02:39:06] pymarl Starting Heartbeat
+[DEBUG 02:39:06] my_main Started
+[INFO 02:39:06] my_main Experiment Parameters:
+[INFO 02:39:06] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'iqn_rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'central_agent': 'anyway',
+    'central_loss': 1,
+    'central_mac': 'base_central_mac',
+    'central_mixer': 'ff',
+    'central_mixing_embed_dim': 128,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'stag_hunt',
+    'env_args': {   'agent_move_block': [   0,
+                                            1,
+                                            2],
+                    'agent_obs': [   2,
+                                     2],
+                    'capture_action': True,
+                    'capture_action_conditions': [   2,
+                                                     1],
+                    'capture_conditions': [   0,
+                                              1],
+                    'capture_freezes': True,
+                    'capture_terminal': False,
+                    'directed_cone_narrow': True,
+                    'directed_exta_actions': True,
+                    'directed_observations': False,
+                    'episode_limit': 200,
+                    'intersection_global_view': False,
+                    'intersection_unknown': False,
+                    'map_name': 'stag_hunt',
+                    'miscapture_punishment': 0,
+                    'mountain_agent_row': -1,
+                    'mountain_slope': 0.0,
+                    'mountain_spawn': False,
+                    'n_agents': 8,
+                    'n_hare': 0,
+                    'n_stags': 8,
+                    'observe_ids': False,
+                    'observe_one_hot': False,
+                    'observe_state': False,
+                    'observe_walls': False,
+                    'p_hare_rest': 0.0,
+                    'p_stags_rest': 0.0,
+                    'prevent_cannibalism': True,
+                    'print_caught_prey': False,
+                    'print_frozen_agents': False,
+                    'random_ghosts': False,
+                    'random_ghosts_indicator': False,
+                    'random_ghosts_mul': -1,
+                    'random_ghosts_prob': 0.5,
+                    'remove_frozen': True,
+                    'reward_collision': 0,
+                    'reward_hare': 1,
+                    'reward_stag': 10,
+                    'reward_time': 0,
+                    'seed': 302387443,
+                    'state_as_graph': False,
+                    'toroidal': False,
+                    'world_shape': [   10,
+                                       10]},
+    'epsilon_anneal_time': 100000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'resz_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 10000,
+    'lr': 0.001,
+    'mac': 'resz_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'n_approx_quantiles': 8,
+    'n_quantiles': 8,
+    'n_target_quantiles': 8,
+    'name': 'resz_stag',
+    'negative_abs': True,
+    'obs_agent_id': False,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimizer': 'RMSProp',
+    'qmix_loss': 1,
+    'quantile_embed_dim': 64,
+    'repeat_id': 1,
+    'rest_mixer': 'qmix',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_replay': False,
+    'seed': 302387443,
+    't_max': 1010000,
+    'target_update_interval': 200,
+    'td_lambda': 0.6,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 16,
+    'use_cuda': True,
+    'use_tensorboard': False}
+
+[INFO 02:39:08] my_main Beginning training for 1010000 timesteps
+/home/Qshaye/pymarl/src/components/episode_buffer.py:130: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 02:39:11] my_main t_env: 200 / 1010000
+[INFO 02:39:11] my_main Estimated time left: 4 minutes, 18 seconds. Time passed: 2 seconds
+Mixer Size: 
+217.354K
+[DEBUG 02:39:13] pymarl Stopping Heartbeat
+[WARNING 02:39:13] pymarl Aborted after 0:00:07!
+Traceback (most recent call last):
+  File "main.py", line 125, in <module>
+    ex.run_commandline(params)
+  File "/opt/anaconda3/envs/py/lib/python3.8/site-packages/sacred/experiment.py", line 312, in run_commandline
+    return self.run(
+  File "/opt/anaconda3/envs/py/lib/python3.8/site-packages/sacred/experiment.py", line 276, in run
+    run()
+  File "/opt/anaconda3/envs/py/lib/python3.8/site-packages/sacred/run.py", line 238, in __call__
+    self.result = self.main_function(*args)
+  File "/opt/anaconda3/envs/py/lib/python3.8/site-packages/sacred/config/captured_function.py", line 42, in captured_function
+    result = wrapped(*args, **kwargs)
+  File "main.py", line 47, in my_main
+    run(_run, config, _log)
+  File "/home/Qshaye/pymarl/src/run.py", line 60, in run
+    run_sequential(args=args, logger=logger)
+  File "/home/Qshaye/pymarl/src/run.py", line 232, in run_sequential
+    runner.run(test_mode=True)
+  File "/home/Qshaye/pymarl/src/runners/episode_runner.py", line 72, in run
+    "obs": [self.env.get_obs()]  # list: 5 * (80, )
+  File "/home/Qshaye/pymarl/src/envs/stag_hunt/stag_hunt.py", line 379, in get_obs
+    agents_obs = [self.get_obs_agent(i) for i in range(self.n_agents)]
+  File "/home/Qshaye/pymarl/src/envs/stag_hunt/stag_hunt.py", line 379, in <listcomp>
+    agents_obs = [self.get_obs_agent(i) for i in range(self.n_agents)]
+  File "/home/Qshaye/pymarl/src/envs/stag_hunt/stag_hunt.py", line 372, in get_obs_agent
+    obs, _ = self._observe([agent_id])
+  File "/home/Qshaye/pymarl/src/envs/stag_hunt/stag_hunt.py", line 607, in _observe
+    self._intersect_targets(grid, agent_ids, targets=self.prey[:self.n_stags, :, :], batch=b, target_id=1,
+  File "/home/Qshaye/pymarl/src/envs/stag_hunt/stag_hunt.py", line 566, in _intersect_targets
+    if self._is_visible(self.agents[agent_ids, batch, :], targets[a, batch, :]):
+  File "/home/Qshaye/pymarl/src/envs/stag_hunt/stag_hunt.py", line 556, in _is_visible
+    d = np.abs(agents - target)
+KeyboardInterrupt

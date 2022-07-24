@@ -43,7 +43,7 @@ class ResZ:
                 self.mixer = DresQMixer(args)
             elif args.mixer == "dmix":
                 self.mixer = DMixer(args)
-            if args.mixer == "datten":
+            elif args.mixer == "datten":
                 self.mixer = DattenMixer(args)
             else:
                 raise ValueError("Mixer {} not recognised.".format(args.mixer))
@@ -79,7 +79,12 @@ class ResZ:
         self.target_central_mac = copy.deepcopy(self.central_mac)
         self.params += list(self.central_mac.parameters())
 
-        self.central_mixer = CentralattenMixer(args)
+        if self.args.central_mixer == "ff":
+            self.central_mixer = DRESCentralMixer(args)  # Feedforward network that takes state and agent utils as input
+        elif self.args.central_mixer == "atten":
+            self.central_mixer = CentralattenMixer(args)
+        else:
+            raise Exception("Error with qCentral")
         
 
         self.params += list(self.central_mixer.parameters())
