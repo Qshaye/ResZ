@@ -1,6 +1,6 @@
 tb_logs/
 results/
-.vscode/launch.json
+/.vscode/launch.json
 components/__pycache__
 controllers/__pycache__
 envs/__pycache__
