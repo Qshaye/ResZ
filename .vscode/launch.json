@@ -1,0 +1,26 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    // debug捕食者游戏
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "python": "/home/Qshaye/.conda/envs/py2/bin/python",
+            "pythonPath": "/home/Qshaye/.conda/envs/py2/bin/python",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "stopOnEntry": true,
+            "justMyCode": true,
+            "args": [
+                "--config=resz_stag", // 选择 config->algs 
+                "--env-config=stag_hunt", //选择 config->envs 为 sc2.yaml
+                "with",
+                "t_max=20000"
+            ]
+        }
+    ]
+}
