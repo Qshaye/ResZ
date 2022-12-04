@@ -1,6 +1,5 @@
 tb_logs/
 results/
-.vscode/launch.json
 components/__pycache__
 controllers/__pycache__
 envs/__pycache__
@@ -11,8 +10,3 @@ utils/__pycache__
 __pycache__
 command
 *.out
-utils/__pycache__/dict2namedtuple.cpython-38.pyc
-utils/__pycache__/logging.cpython-38.pyc
-utils/__pycache__/rl_utils.cpython-38.pyc
-utils/__pycache__/th_utils.cpython-38.pyc
-utils/__pycache__/timehelper.cpython-38.pyc
