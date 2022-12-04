@@ -7,7 +7,7 @@ from .dresq_nocentral_learner import NoCentralDResQLearner
 
 from .dresq_new import DResQ
 from .resz_learner import ResZ
-from .resz_v1_learner import ResZ_todo
+from .resz_v1_learner import ResZ_simple
 # from .rest_q_learner_central import RestQLearnerCentral
 
 REGISTRY = {}
@@ -20,4 +20,4 @@ REGISTRY["restq_learner_clean"] = RestQLearner
 REGISTRY['dresq_nocentral_learner'] = NoCentralDResQLearner
 REGISTRY['dresq_new'] = DResQ
 REGISTRY['resz_learner'] = ResZ
-REGISTRY['resz_simple'] = ResZ_todo
+REGISTRY['resz_simple'] = ResZ_simple
