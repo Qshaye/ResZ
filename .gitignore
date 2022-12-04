@@ -1,2 +1,12 @@
 tb_logs/
 results/
+.vscode/launch.json
+components/__pycache__
+controllers/__pycache__
+envs/__pycache__
+learners/__pycache__
+modules/__pycache__
+runners/__pycache__
+utils/__pycache__
+command
+*.out
