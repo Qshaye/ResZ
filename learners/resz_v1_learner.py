@@ -21,7 +21,7 @@ from torch.optim import Adam
 
 # 0619 reduce Zr_i
 
-class ResZ_todo:
+class ResZ_simple:
 
     def __init__(self, mac, scheme, logger, args):
         self.args = args
