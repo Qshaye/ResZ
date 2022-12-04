@@ -28,6 +28,7 @@ median_max = True
 # median_max=True的意思是先取max，再取median
 # median_max = False的时候是先取median，再取max
 
+
 def read_json(file_path):
     f = open(file_path)
     conf = json.load(f)
