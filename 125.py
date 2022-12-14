@@ -10,7 +10,7 @@ from email.utils import formataddr
 def mail(my_sender='failease@126.com', my_pass='KLRCXDEZGWETNICY', to_user='failease@126.com', my_nick='qshaye', to_nick='qshaye', mail_msg=None):
 
     mail_msg = """	
-    <p> 139 命令都跑完了，服务器空了！</p>	
+    <p> 125 命令都跑完了，服务器空了！</p>	
     <p>进程结束！ 请存入指令重启程序</p>	
     """
 
@@ -68,9 +68,9 @@ def write_cmd_back(cmds, file_path):
 
 if __name__ == "__main__":
 
-    cmd_path = "/home/Qshaye/pymarl/src/command"
+    cmd_path = "/home/Qshaye/pymarl/rmix_src/command"
 
-    maximal_usage = 12500
+    maximal_usage = 13000
     gpu_ids = [0, 1, 2, 3]
     print("The command path is", cmd_path)
     command_file_path = cmd_path
