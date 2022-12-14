@@ -10,3 +10,4 @@ utils/__pycache__
 __pycache__
 command
 *.out
+*.txt

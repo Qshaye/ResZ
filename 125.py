@@ -68,7 +68,7 @@ def write_cmd_back(cmds, file_path):
 
 if __name__ == "__main__":
 
-    cmd_path = "/home/Qshaye/pymarl/rmix_src/command"
+    cmd_path = "/home/Qshaye/ResZ/command"
 
     maximal_usage = 13000
     gpu_ids = [0, 1, 2, 3]
