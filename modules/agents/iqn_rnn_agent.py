@@ -72,4 +72,4 @@ class IQNRNNAgent(nn.Module):
         q_vals = q_vals.permute(0, 2, 1) 
         assert q_vals.shape == (batch_size, self.args.n_actions, n_rnd_quantiles)
         rnd_quantiles = rnd_quantiles.view(batch_size_grouped, n_rnd_quantiles)
-        return q_vals, h, rnd_quantiles
+        return q_vals, h, rnd_quantiles  # q_vals是分布价值函数Z [n_agents, n_actions, n_rnd_quantiles]
