@@ -1,7 +1,5 @@
 # --- QMIX specific parameters ---  
-# 这是之前投稿时的ResZ文件，算法存储的名字为 "Rdresq_nabsqr_atten_lambda06"
-# 这个resz用的是resz_mac，把分布式的controller单独分离为一个mac
-# use epsilon greedy action selector
+# resz + static_risk(修改于resz_controller.py)
 action_selector: "epsilon_greedy"
 epsilon_start: 1.0
 epsilon_finish: 0.05
@@ -48,10 +46,12 @@ n_constrant_value: 32
 type: "weighted"
 agent_own_state_size: True
 
+static_risk: True
+
 td_lambda: 0.6
 lr: 0.001  # 0.0005 in default
 
 central_loss: 1
 qmix_loss: 1
 
-name: "Rdresq_nabsqr_atten_lambda06"  # 决定了数据存储的文件目录名
+name: "ResZ_sr"  # 决定了数据存储的文件目录名

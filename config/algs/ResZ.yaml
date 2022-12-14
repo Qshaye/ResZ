@@ -1,5 +1,7 @@
 # use epsilon greedy action selector
 # 这个版本运行不了分布式的智能体，因为basicmac已经被改为原始的pymarl版（除非使用v2_basic_controller）
+# 没有显示指定mac，只指定了central_mac，所以mac会设置为default.yaml中的 mac: "basic_mac"
+# 这是之前投稿时的ResZ文件，算法存储的名字为 "Rdresq_nabsqr_atten_lambda06"
 action_selector: "epsilon_greedy"
 epsilon_start: 1.0
 epsilon_finish: 0.05
