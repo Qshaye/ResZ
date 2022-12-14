@@ -22,8 +22,8 @@ ex.logger = logger
 ex.captured_out_filter = apply_backspaces_and_linefeeds
 
 # 让debug的结果单独存
-src_path = dirname(abspath(__file__))  # '/home/Qshaye/pymarl/debug_src'
-results_path = os.path.join(dirname(src_path), "debug_results")
+# '/home/Qshaye/pymarl/debug_src'
+results_path = '/home/Qshaye/pymarl/results'
 # if src_path.find('debug_src') >= 0:
 #     results_path = os.path.join(dirname(src_path), "debug_results")
 # else:
