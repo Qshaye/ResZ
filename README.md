@@ -32,6 +32,8 @@ If you use ResQ/ResZ in your research, please cite our paper
 
 *Siqi Shen, Mengwei Qiu, Jun Liu, Weiquan Liu, Yongquan Fu, Xinwang Liu, Cheng Wang. ResQ: A Residual Q Function-based Approach for Multi-Agent Reinforcement Learning Value Factorization. NeurIPS 2022*
 
+https://neurips.cc/virtual/2022/spotlight/65130
+
 In BibTeX format:
 
 ```tex
