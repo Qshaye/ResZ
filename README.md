@@ -3,8 +3,9 @@
 This code is build based on PyMARL2 and PyMARL. We assume that you have experience with PyMARL.
 The requirements are the same as PyMARL2.
 
-###  In fact, this is an improved version of the code used in the paper, for communication purposes only!
+**In fact, this is an improved version of the code used in the paper, for communication purposes only!**
 
+**The original code is available as open source at: https://github.com/xmu-rl-3dv/ResQ**
 
 
 ## Run an experiment 
