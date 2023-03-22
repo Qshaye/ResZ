@@ -12,7 +12,8 @@ The requirements are the same as PyMARL2.
 
 
 ```shell
-python3 src/main.py --config=ResZ --env-config=sc2 with env_args.map_name=2s3z
+cd ResZ
+python3 main.py --config=ResZ --env-config=sc2 with env_args.map_name=2s3z
 ```
 
 
